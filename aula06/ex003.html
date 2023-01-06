@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula06</h1>
+    <p>armazenando dados</p>
+
+    <script>
+        var n1 = Number(window.prompt('Digite o primeiro número:')) //  de string para number
+        var n2 = Number(window.prompt('Digite o segundo número:')) //  de string para number
+        var s = n1 + n2
+        window.alert('A soma de '+ n1 +' e ' + n2 + ' é ' + s)
+
+        var n3 = Number(window.prompt('Digite o terceiro valor:'))
+        window.alert('O valor '+ n3 +' é '+ typeof(n3))
+
+        var newN3 = String(n3) //  de number para string
+
+        // window.alert('Agora '+ n3 +' é ' + typeof(newN3)) // alert usando concatenação
+        window.alert(`Agora ${n3} é ${typeof(newN3)}`) // alert usando template string
+
+
+    </script>
+</body>
+</html>

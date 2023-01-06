@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual seu nome?')
+        document.write(`Seu nome ${nome.toUpperCase()} tem ${nome.length} letras <br>`)
+
+        var n1 = 1543.5
+        document.write(`antes: ${n1}, depois: ${n1.toFixed(2).replace('.', ',')} <br>`) //toFixed() determina a quantidade de casas decimais, depois da vírgula. replace('','') troca o ponto pela vírgula, antes das casas decimais.
+        document.write(`convertendo para reais: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`) // toLocaleString('', {style: '', currency: ''}) converte para real.
+    </script>
+</body>
+</html>
